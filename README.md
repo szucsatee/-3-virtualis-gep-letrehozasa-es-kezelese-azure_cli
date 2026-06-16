@@ -10,6 +10,7 @@ Első lépésként jelentkezz be az Azure fiókodba a bérlői azonosítód (Ten
 
 ```bash
 az login --tenant "TENANT_AZONOSITO"
+az login --tenant XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX
 ```
 
 ### 📋 Környezet ellenőrzése
@@ -67,7 +68,7 @@ Ha nem szeretnél a VNet és Subnet manuális beállításaival időt húzni, az
   ```
 * **Elérhető gépméretek lekérdezése az adott régióban:**
   ```bash
-  az vm list-sizes --location "westeurope" --output table
+  az vm list-sizes --location "pl: swedencentral" --output table
   ```
 
 ### Új Virtuális Gép indítása
@@ -77,13 +78,15 @@ Az alábbi parancs létrehoz egy alapértelmezett virtuális gépet:
 az vm create \
   --resource-group "EROFORRASCSOPORT_NEVE" \
   --name "VM_neve" \
-  --size "Standard_D2s_v3" \
+  --size "Standard_B2s" \
   --public-ip-sku Standard \
   --admin-username "azureuser" \
-  --admin-password "BiztonsagosJelszo123!"
+  --admin-password "BiztonsagosJelszo1234@!"
+```
+```bash
+az vm create --resource-group "EROFORRASCSOPORT_NEVE" --name "VM_neve" --size "Standard_B2s" --public-ip-sku Standard --admin-username "azureuser" --admin-password "BiztonsagosJelszo1234@!"
 ```
 
----
 
 ## 📊 4. Operációs Rendszerek (OS Images) Választása
 
@@ -94,6 +97,7 @@ Alapértelmezett gép helyett saját Linux vagy Windows rendszert is választhat
   az vm image list --output table
   ```
 > 💡 **Tipp:** A választás során a táblázatban megjelenő **UrnAlias** értékére kell hivatkozni (pl. `Ubuntu2204` vagy `Win2022Datacenter`).
+
 
 ---
 
