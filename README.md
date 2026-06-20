@@ -83,6 +83,7 @@ az vm create \
   --admin-username "azureuser" \
   --admin-password "BiztonsagosJelszo1234@!"
 ```
+
 ```bash
 az vm create --resource-group "EROFORRASCSOPORT_NEVE" --name "VM_neve" --size "Standard_B2s" --public-ip-sku Standard --admin-username "azureuser" --admin-password "BiztonsagosJelszo1234@!"
 ```
