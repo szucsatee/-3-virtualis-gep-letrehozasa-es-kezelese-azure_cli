@@ -66,7 +66,7 @@ Ha nem szeretnél a VNet és Subnet manuális beállításaival időt húzni, az
   ```bash
   az account list-locations --output table
   ```
-* **Elérhető gépméretek lekérdezése az adott régióban:**
+* **Elérhető gépméretek lekérdezése az adott régióban:** 
   ```bash
   az vm list-sizes --location "pl: swedencentral" --output table
   ```
