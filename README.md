@@ -24,6 +24,7 @@ Miután bejelentkeztél, az alábbi parancsokkal térképezheted fel a meglévő
   ```bash
   az group list --output table
   ```
+<img width="1256" height="470" alt="image" src="https://github.com/user-attachments/assets/2b38b09a-3598-44c6-b63c-2953bb8df5b5" />
 
 ---
 
@@ -59,7 +60,7 @@ Amennyiben saját hálózatot szeretnél kialakítani a virtuális gép alá, ha
 
 ## 🚀 3. Virtuális Gép Létrehozása
 
-Ha nem szeretnél a VNet és Subnet manuális beállításaival időt húzni, az Azure automatikusan létrehozza azokat a gép indításakor.
+Ha nem szeretnél a VNet és Subnet manuális beállításaival bajlódni, az Azure automatikusan létrehozza azokat a gép indításakor.
 
 ### Előkészületek
 
