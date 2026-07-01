@@ -1,15 +1,15 @@
 # 🖥️ Virtuális gép létrehozása és kezelése Azure CLI-vel
 
-Ez a leírás bemutatja, hogyan hozhatsz létre, kérdezhetsz le és kezelhetsz virtuális gépeket, valamint a hozzájuk tartozó hálózati erőforrásokat az Azure CLI segítségével.
+Ebben a leírásban bemutatom, hogyan hozhatsz létre, kérdezhetsz le és kezelhetsz virtuális gépeket, és a hozzájuk tartozó hálózati erőforrásokat az Azure CLI segítségével.
 
 ---
 
-## 🔐 1. Bejelentkezés és Alapvető Lekérdezések
+## 🔐 1. Bejelentkezés és alapvető lekérdezések
 
 Első lépésként jelentkezz be az Azure fiókodba a bérlői azonosítód (Tenant ID) megadásával:
 
 ```bash
-az login --tenant "TENANT_AZONOSITO"
+az login --tenant "TENANT_ID"
 az login --tenant XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX
 ```
 
@@ -105,7 +105,7 @@ az vm create --resource-group "EROFORRASCSOPORT_NEVE" --name "VM_neve" --size "S
 
 
 
-Ha a meglévő vNrt-hez szeretnéd illeszteni azt így teheted meg:
+Ha a meglévő vNet-hez szeretnéd illeszteni azt így teheted meg:
 ```bash
 az vm create \
   --resource-group "EROFORRASCSOPORT_NEVE" \
